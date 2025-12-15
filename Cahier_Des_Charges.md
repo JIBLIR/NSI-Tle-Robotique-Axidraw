@@ -7,13 +7,14 @@ Comment mettre en place tt les objets pour controler une machine a distance ?
 Ce programme permet à l'utilisateur de dessiner des formes sur une interface graphique. Il peut envoyer les formes dessinées sur l'ordinateur à une machine AxiDraw par reseau qui elle va dessiner les formes envoyées par l'utilisateur. 
 
 ## Aspect théorique : 
-Nous allons 
+Nous allons utiliser un robot d'écriture ainsi qu'un logiciel de dessin afin de dessiner des figures géométriques.
 
 ## Part sociétale :
-A
+D'un point de vue sociétal, une telle approche permet à tout le monde de faire des affiches analogues à Canva, pour des utilisation de calligraphie par exemple.
+
 
 ## Partie algorithmique: 
-A
+
 
 ## Ressources documentaire :
 -Github
