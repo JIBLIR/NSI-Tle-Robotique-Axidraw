@@ -10,9 +10,12 @@ Ce programme permet à l'utilisateur de dessiner des formes sur une interface gr
 Le projet repose sur plusieurs notions théoriques importantes :
 
 -Robot d’écriture : l’AxiDraw est un traceur qui se déplace sur deux axes (X et Y) et permet de dessiner des formes précises à partir de coordonnées.
+
 -Graphisme vectoriel (SVG) : contrairement aux images matricielles, le SVG décrit les formes à l’aide de formules mathématiques (lignes, rectangles, ellipses), ce qui est idéal pour le pilotage d’une machine.
--Architecture client / serveur :
--le client est l’application de dessin sur l’ordinateur de l’utilisateur,
+
+Architecture client / serveur :
+-le client est l’application de dessin sur l’ordinateur de l’utilisateur
+
 -le serveur reçoit le fichier SVG et le transmet à la machine AxiDraw.
 
 ## Part sociétale :
@@ -21,8 +24,10 @@ D’un point de vue sociétal, ce type de logiciel rend accessible la création 
 
 Il permet par exemple :
 
--de réaliser des affiches personnalisées,
--de faire de la calligraphie automatisée,
+-de réaliser des affiches personnalisées
+
+-de faire de la calligraphie automatisée
+
 -de produire des dessins précis sans compétences artistiques avancées.
 
 ## Partie algorithmique: 
@@ -30,22 +35,35 @@ Il permet par exemple :
 La partie algorithmique du projet se découpe en plusieurs étapes :
 
 -Gestion du dessin
+
 -Récupération des coordonnées de la souris.
+
 -Création des formes (ligne, rectangle, ellipse).
+
 -Sauvegarde des coordonnées dans une structure de données (liste de dictionnaires).
+
 -Conversion en SVG
+
 -Transformation des coordonnées du canvas en coordonnées SVG.
+
 -Application d’un facteur d’échelle pour adapter le dessin aux dimensions physiques de l’AxiDraw.
+
 -Génération dynamique des balises <line>, <rect> et <ellipse>.
+
 -Communication réseau
+
 -Envoi du code SVG au serveur via une requête HTTP (POST).
+
 -Le serveur se charge ensuite d’interpréter le SVG et de piloter la machine.
 
 
 ## Ressources documentaire :
 -GitHub (documentation et exemples de projets similaires)
+
 -Documentation officielle de Tkinter
+
 -Documentation SVG (W3C)
+
 -Documentation de la machine AxiDraw
 
 
@@ -69,10 +87,15 @@ La partie algorithmique du projet se découpe en plusieurs étapes :
 
 ## Méthodologie : 
 -Analyse du fonctionnement de l’AxiDraw.
+
 -Création de l’interface graphique de dessin.
+
 -Enregistrement des formes et de leurs coordonnées.
+
 -Conversion du dessin en SVG.
+
 -Mise en place de la communication client / serveur.
+
 -Tests et corrections du programme.
 
 ## Repartition des tâches au sein du groupe :
