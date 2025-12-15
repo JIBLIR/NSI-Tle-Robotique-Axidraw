@@ -1,7 +1,7 @@
 # Nom du projet : Logiciel d'impresion d'un dessin sur une machine AxiDraw V3 
 
 ## Problematique : 
-	Comment mettre en place tt les objets pour controler une machine a distance
+	Comment mettre en place tt les objets pour controler une machine a distance ?
 
 ## Introduction : 
 	Ce programme permet à l'utilisateur de dessiner des formes sur une interface graphique. Il peut envoyer les formes dessinées sur l'ordinateur à une machine AxiDraw par reseau qui elle va dessiner les formes envoyées par l'utilisateur. 
