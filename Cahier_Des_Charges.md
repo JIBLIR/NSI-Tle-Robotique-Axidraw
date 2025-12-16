@@ -82,10 +82,12 @@ Fonction make_button permet de créer un bouton.
 
 ## Outils logiciel :
 -Tkinter : Bibliotheque qui permet de gerer l'intervace graphique du projet
+
 -AxiDraw : Permet de gerer le moteur de la machine 
 
 ## Matériels nécessaires :
 -Un ordinateur
+
 -Une machine AxiDraw V3 
 
 ## Méthodologie : 
