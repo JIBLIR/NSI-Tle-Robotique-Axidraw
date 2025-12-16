@@ -1,5 +1,6 @@
 #Convertion en svg 27/11, Clear_Last 2/12, Import de la fonction qui permet d'envoyer au serv 4/12
-
+# importation des bibliothèques
+import requests 
 import tkinter as tk
 
 # Configuration de la fenêtre principale
@@ -15,6 +16,7 @@ shape = ""
 start_x, start_y = None, None
 preview = None
 saved_shapes = []
+url = "http://172.16.100.30:5432/recevoir"
 
 # --- Les fonctions principales ---
 
@@ -114,16 +116,17 @@ def convertion(sauv):
 	return conv 
 
 
-def imprimer_svg_client(svg):
+
+def imprimer_svg_client(svg,url):
 	'''envoie sur le serveur le fichier svg pour imprimer'''
-	import requests 
 
-	url = "http://172.16.100.30:5432/recevoir"
-
+	# création du dictionnaire "chaine" contenant le svg
 	chaine = {'message' : svg}
+	# transfert du svg au serveur
 	response = requests.post(url, data = chaine)
+	# retourne la reponse
+	return response.text
 
-	return response
 
 
 # --- Interface de l'utilisateur ---
@@ -151,7 +154,7 @@ make_button(toolbar, "Ligne", lambda: set_shape('ligne'), "ligne") #Bouton pour 
 make_button(toolbar, "Rectangle", lambda: set_shape('rectangle'), "rectangle") #Bouton pour faire un rectangle
 make_button(toolbar, "Oval", lambda: set_shape('oval'), "oval") #Bouton pour faire un oval
 make_button(toolbar, "Creer Code SVG", lambda : convertion(saved_shapes) , "Code SVG")#Bouton pour créer le code SVG 
-make_button(toolbar, "Envoyer au serveur", lambda : imprimer_svg_client(convertion(saved_shapes)), "Envoi")#Bouton pour envoyer au serv 
+make_button(toolbar, "Envoyer au serveur", lambda : imprimer_svg_client(convertion(saved_shapes),url), "Envoi")#Bouton pour envoyer au serv 
 
 # Le canvas principal
 canvas = tk.Canvas(root, bg='white', highlightthickness=0, cursor="cross")
@@ -166,3 +169,4 @@ canvas.bind("<Button-3>", clear_last)
 
 # Lancement
 root.mainloop()
+
