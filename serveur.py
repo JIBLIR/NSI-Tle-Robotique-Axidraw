@@ -3,10 +3,11 @@ import cherrypy
 import os
 
 def index():
-	''' instanciation du serveur web, de la page index '''
+	''' instanciation de la page index '''
 	return "Hello"
 
 def recevoir(message,imprimer=True):
+	''' instanciation de la page recevoir, permettant le traitement du fichier svg et son impression  '''
 	# source pour le traitement du svg : https://stackoverflow.com/questions/71104397/how-to-convert-svg-string-to-svg-file-using-python
 	with open("svgTest.svg", "w") as svg_file:
 			svg_file.write(message)
