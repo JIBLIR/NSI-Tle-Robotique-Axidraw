@@ -1,5 +1,7 @@
 # Nom du projet : Logiciel d'impresion d'un dessin sur une machine AxiDraw V3 
 
+mindmap : https://simplemindmap.com/mindmap?id=427f35b8-ca57-4905-a7c6-a96b855a4010
+
 ## Problematique : 
 Comment mettre en place tt les objets pour controler une machine a distance ?
 
