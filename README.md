@@ -83,7 +83,7 @@ Source - https://stackoverflow.com/questions/38991286/cherrypy-upload-file
 
 https://www.datacamp.com/fr/tutorial/comprehensive-tutorial-on-using-pathlib-in-python-for-file-system-manipulation
 
-
+- Utilisation Grok et ChatGPT : n'a pas abouti pour le réseau et le logiciel
 
 
 ## Part projective et part minimal:
