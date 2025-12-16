@@ -115,8 +115,6 @@ def convertion(sauv):
 	conv = conv + "</svg>"
 	return conv 
 
-
-
 def imprimer_svg_client(svg,url):
 	'''envoie sur le serveur le fichier svg pour imprimer'''
 
@@ -126,8 +124,6 @@ def imprimer_svg_client(svg,url):
 	response = requests.post(url, data = chaine)
 	# retourne la reponse
 	return response.text
-
-
 
 # --- Interface de l'utilisateur ---
 toolbar = tk.Frame(root, bg="#ececec", height=50)
@@ -166,7 +162,7 @@ canvas.bind('<B1-Motion>', draw)
 canvas.bind('<ButtonRelease-1>', stop_draw)
 canvas.bind("<Button-3>", clear_last)
 
-
 # Lancement
 root.mainloop()
+
 
