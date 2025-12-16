@@ -97,7 +97,7 @@ et retourne le message
 
 
 
-Voici le fonctionnement en détail :
+### Voici le fonctionnement en détail :
 
 -Gestion du dessin
 
