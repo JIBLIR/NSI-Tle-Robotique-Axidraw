@@ -40,17 +40,24 @@ le message envoyé
 
 Pour le serveur :
 Fonction index instanciant le site web
+
 Fonction recevoir, vérifiant la présence d'un fichier svg afin de l'enregister puis de l'imprimer 
 et retourne le message
 
 ### Pour le logiciel :
 Fonction start_draw qui permet d'enregistrer les coordonnées du premier point de la forme ou le client a cliqué.
+
 Fonction draw qui elle permet de montrer a quoi va resembler la forme en train d'etre dessinée tout cela pendant que le client maintien le clic.
+
 Fonction stop_draw sert quand le clic est relaché a créer la forme faite par le client.
+
 La fonction save_co sert a enregistrer les informations de la forme faite comme ces coordonnées, quelle forme etait faite et son identifiant qui sert a unifié chaques formes crées.
-La fonction convertion nous permet d'enregistrer toutes les formes du canvas en code svg 
-La fonction imprimer_svg_client sert à envoier le code svg du canvas au serveur qui se chargera de l'imprimer 
-Fonction make_button permet de créer un bouton 
+
+La fonction convertion nous permet d'enregistrer toutes les formes du canvas en code svg.
+
+La fonction imprimer_svg_client sert à envoier le code svg du canvas au serveur qui se chargera de l'imprimer.
+
+Fonction make_button permet de créer un bouton.
 
 ## Ressources documentaire :
 -GitHub (documentation et exemples de projets similaires)
