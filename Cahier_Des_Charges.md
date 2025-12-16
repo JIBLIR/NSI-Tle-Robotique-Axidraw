@@ -32,29 +32,24 @@ Il permet par exemple :
 
 ## Partie algorithmique: 
 
-La partie algorithmique du projet se découpe en plusieurs étapes :
+### Pour le réseau :
 
--Gestion du dessin
+Pour le client : 
+Fonction imprimer_svg_client qui prend en entrée le svg et qui l'envoie au serveur et retourne
+le message envoyé
 
--Récupération des coordonnées de la souris.
+Pour le serveur :
+Fonction index instanciant le site web
+Fonction recevoir, vérifiant la présence d'un fichier svg afin de l'enregister puis de l'imprimer 
+et retourne le message
 
--Création des formes (ligne, rectangle, ellipse).
+### Pour le logiciel :
 
--Sauvegarde des coordonnées dans une structure de données (liste de dictionnaires).
 
--Conversion en SVG
+->
 
--Transformation des coordonnées du canvas en coordonnées SVG.
 
--Application d’un facteur d’échelle pour adapter le dessin aux dimensions physiques de l’AxiDraw.
 
--Génération dynamique des balises <line>, <rect> et <ellipse>.
-
--Communication réseau
-
--Envoi du code SVG au serveur via une requête HTTP (POST).
-
--Le serveur se charge ensuite d’interpréter le SVG et de piloter la machine.
 
 
 ## Ressources documentaire :
@@ -86,6 +81,7 @@ La partie algorithmique du projet se découpe en plusieurs étapes :
 -Une machine AxiDraw V3 
 
 ## Méthodologie : 
+
 -Analyse du fonctionnement de l’AxiDraw.
 
 -Création de l’interface graphique de dessin.
@@ -97,6 +93,36 @@ La partie algorithmique du projet se découpe en plusieurs étapes :
 -Mise en place de la communication client / serveur.
 
 -Tests et corrections du programme.
+
+
+
+
+Voici le fonctionnement en détail :
+
+-Gestion du dessin
+
+-Récupération des coordonnées de la souris.
+
+-Création des formes (ligne, rectangle, ellipse).
+
+-Sauvegarde des coordonnées dans une structure de données (liste de dictionnaires).
+
+-Conversion en SVG
+
+-Transformation des coordonnées du canvas en coordonnées SVG.
+
+-Application d’un facteur d’échelle pour adapter le dessin aux dimensions physiques de l’AxiDraw.
+
+-Génération dynamique des balises <line>, <rect> et <ellipse>.
+
+-Communication réseau
+
+-Envoi du code SVG au serveur via une requête HTTP (POST).
+
+-Le serveur se charge ensuite d’interpréter le SVG et de piloter la machine.
+
+
+
 
 ## Repartition des tâches au sein du groupe :
 Nous avons essayés répartir les tâches équitablement lors de ce projet. Nous avons répartis ce projet en deux. Jean-Batiste c'est occupé de faire la partie reseau qui est donc que l'on peut envoyer notre dessin à distance puis Jules c'est occupé de faire la partie d'intervace graphique plus la transformation en code svg du dessin, cette partie consistait donc de créer un interface graphique où l'on puisse dessiner des formes puis les convertir en code svg pour ensuite les faires dessiner par la machine.
