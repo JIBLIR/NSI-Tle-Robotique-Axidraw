@@ -1,4 +1,5 @@
 # Nom du projet : Logiciel d'impresion d'un dessin sur une machine AxiDraw V3 
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/5de3cf49-03d9-4071-959d-ba7d1313063b" />
 
 Note : 17.5/20
 
